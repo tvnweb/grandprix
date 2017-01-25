@@ -37,7 +37,7 @@
 
 
 
-<!--	<header id="masthead" class="site-header" role="banner" data-sticky-container>
+	<header id="masthead" class="site-header" role="banner" data-sticky-container>
 			<div class="title-bar" data-responsive-toggle="site-navigation">
 				<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
 				<div class="title-bar-title">
@@ -63,7 +63,7 @@
 					<?php endif; ?>
 				</div>
 				<div class="top-bar-right">
-					<!-- socials
+					<!-- socials -->
 					Seguici su: &#160;
 					<span class="fa-stack fa-lg">
 			  		<i class="fa fa-circle fa-stack-2x"></i>
@@ -79,7 +79,7 @@
 			</div>
 			</nav>
 
-		</header> -->
+		</header>
 
 
 
