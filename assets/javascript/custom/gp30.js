@@ -47,7 +47,7 @@ $(window).scroll(function() {
   $(".container section").each( function() {
     var sect_ST = parseInt($(".container section").eq(idx).offset().top);
     var IDS = $(this).attr("id");
-    if(IDS != "slider") {
+    if(IDS != "hp") {
       if(ST>sect_ST) {
         //console.log("fade in "+$(this).attr("id"));
         //console.log("Page "+ST+" section "+sect_ST);
