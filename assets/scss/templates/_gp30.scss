@@ -1,0 +1,273 @@
+body { background-color:$white; }
+p { margin: 0 !important; font-family: Muli; }
+section { margin-bottom: 3%; text-align: center;}
+.testo{padding: 2% 0}
+h3{font-family: 'Muli'; font-size: 1.3em; text-transform: uppercase; text-decoration: underline;}
+.container > section:not(:first-child) {
+  opacity: 0;
+  transition: all 1s linear;
+}
+
+.container, #hp{padding: 0;}
+
+li.blurImg img {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+}
+
+.is-dropdown-submenu {
+  transition: all 0.5s linear;
+  left: -11px !important;
+  top: 40px !important;
+  opacity: 0;
+}
+
+.is-dropdown-submenu-item {
+  display: inline-block;
+
+  a {  white-space: nowrap !important;
+      padding: 10px 10px 10px 10px !important;
+      font-style: italic;
+      text-transform: uppercase;
+      font-weight: 300 !important;
+      font-size: 12px !important;
+    }
+}
+
+.js-dropdown-active { z-index: 0 !important; }
+
+#backtotop {
+  position: fixed;
+  bottom: 20px; right: 20px;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+#premio{
+  text-align: center;
+  .premio-content{
+    h1{font-family:'Muli'; font-weight:900; font-size: 2em; text-transform: uppercase; margin-bottom: 0 !important; line-height: 1 !important;}
+      @include grid-row();
+        @include breakpoint(small) {
+          h1{font-size: 1.1em; line-height: 1.2;}
+          .testo p{font-size: 0.9em !important;}
+        }
+
+        @include breakpoint(medium) {
+          h1{font-size: 1.6em; line-height: 1.6;}
+          .testo p{font-size: 1em !important;}
+        }
+
+        @include breakpoint(large) {
+          h1{font-size: 2em; line-height: 1.6;}
+          .testo p{font-size: 1.1em !important;}
+        }
+  }
+}
+
+#hp{
+max-width: 100% !important;
+background-color: #000000 !important;
+@include grid-row();
+
+.overlay img{
+  position: absolute;
+  left: 35%;
+  width: 30%;
+}
+
+@include breakpoint(small) {
+.overlay img{
+  top: 70px;
+}
+}
+@include breakpoint(medium) {
+.overlay img{
+  top: 100px;
+}
+}
+@include breakpoint(large) {
+.overlay img{
+  left: 34%;
+  position: absolute;
+  top: 10%;
+  width: 35%;
+}
+
+}
+}
+
+#giuria{
+ background-color: #f3f3f3;
+#lista-giuria {
+@include breakpoint(small) {
+
+           @include grid-row();
+           .testo p{font-size: 0.9em !important;}
+                         .griglia-giuria {
+                           padding: 0 !important;
+                            img {width: 100%; }
+                             @include grid-column(4);
+                           }
+              }
+
+              @include breakpoint(medium) {
+
+                         @include grid-row();
+                         .testo p{font-size: 1em !important;}
+
+                            }
+              @include breakpoint(large) {
+                .testo p{font-size: 1.1em !important;}
+                         @include grid-row();
+                                       .griglia-giuria {
+                                         padding: 0 !important;
+                                          img {width: 100%; }
+                                           @include grid-column(2);
+                                         }
+                            }
+}
+
+}
+#gallery{
+  @include grid-row();
+    .columns{padding: 0;}
+}
+
+
+
+#gp{
+  #winner{
+  @include grid-row();
+
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+     max-width: initial;
+   }
+}
+
+
+#masthead { background-color: #000 !important; height: 105px !important; }
+
+
+#winner-list{
+  max-width: 100% !important;
+  #video{
+
+     @include grid-row();
+
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: initial;
+}
+
+@include breakpoint(small) {
+
+                  @include grid-row();
+                                .thumb-video {
+                                  padding: 0 !important;
+                                   img {width: 100%; margin: 0;}
+                                    @include grid-column(12);
+                                  }
+                     }
+
+                     @include breakpoint(medium) {
+
+                                @include grid-row();
+                                              .thumb-video {
+                                                padding: 0 !important;
+                                                 img {width: 100%; margin: 0;}
+                                                  @include grid-column(4);
+                                                }
+                                   }
+
+                     @include breakpoint(large) {
+
+                                @include grid-row();
+                                              .thumb-video {
+                                                padding: 0 !important;
+                                                  img {width: 100%; margin: 0;}
+                                                  @include grid-column(3);
+                                                }
+                                   }
+}
+
+
+#hp {
+  /*background-image: url("/GRANDPRIX/restyle/wp-content/themes/FoundationPress/images/gp30/mediamond.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #000;
+  padding: 0; margin-bottom: 3em; */
+  height: 600px;
+  text-align: center;
+  vertical-align: bottom;
+
+  .overlay img {
+      height: 50%;
+      opacity: 0.1;
+      margin-top: 100px;
+    }
+}
+
+#interviste{
+   background-color: #f3f3f3;
+   max-width: 100% !important;
+   @include breakpoint(small) {
+.testo p{font-size: 0.9em !important;}
+
+}
+
+  @include breakpoint(medium) {
+    .testo p{font-size: 1em !important;}
+
+  }
+
+  @include breakpoint(large) {
+    .testo p{font-size: 1.1em !important;}
+
+  }
+
+
+   .carosel{
+    @include grid-row();
+      max-width: 57rem !important;
+
+
+
+
+}
+}
+
+
+#sponsor{
+
+#lista-loghi {
+  @include grid-row();
+    max-width: 57rem !important;
+    .thumbnail{box-shadow: 0 0 0 0 !important;}
+      @include breakpoint(small) {
+         .griglia-loghi {
+           padding: 0 !important;
+            img {width: 100%; }
+             @include grid-column(3);
+           }
+        }
+
+              @include breakpoint(large) {
+
+                         @include grid-row();
+                                       .griglia-loghi {
+                                         padding: 0 !important;
+                                          img {width: 100%; }
+                                           @include grid-column(3);
+                                         }
+                            }
+}
+
+}
