@@ -7,9 +7,9 @@
   font-family: Muli; font-size: 12px; margin-top: 8px;
 }
 
-/*#mobile-menu, .title-bar {
+#mobile-menu, .title-bar {
   @include hide-for(medium);
-}*/
+}
 
 .top-navigation {
   @include show-for(medium);
